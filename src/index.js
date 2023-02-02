@@ -3,11 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ShopProvider from './context/shopContext';
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//   <ShopProvider>
+//     <App />
+//   </ShopProvider>
+// </React.StrictMode>,
+// document.getElementById('root')
+// );
+
+
+// const root = ReactDOM.createRoot(document.getElementById('root')); 
+
+// root.render(       <App /> );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <ShopProvider>
+      <App />
+    </ShopProvider>
   </React.StrictMode>
 );
 
